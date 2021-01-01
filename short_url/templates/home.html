@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SHORT URL</title>
+
+
+</head>
+<body>
+    <div class="url">
+        <form method="POST">
+            <H1> Free URL shortening service</H1>
+            <p> Paste url here :  </p> <input id="input_url" name="input_url" type="text" required>
+            <input type="submit" value="Generate">
+        </form>
+        <p>Your short url:</p>
+        {% if output_url %}
+        <p>{{ output_url }}</p>
+        {% endif %}
+    </div>
+</body>
+</html>
